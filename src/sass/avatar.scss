@@ -1,10 +1,12 @@
 
-   
-  
-  #randomName:hover {
+  #randomName.shake{
+    animation : shake .10s; 
+    animation-iteration-count: infinite;
+    }
+ /* #randomName:hover {
     animation: shake 0.10s;
     animation-iteration-count: infinite;
-  }
+  }*/
   
   @keyframes shake {
     0% { transform: translate(3px, 3px) rotate(0deg); }
