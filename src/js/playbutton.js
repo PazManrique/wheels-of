@@ -5,7 +5,8 @@ let btnValidatePlay = document.getElementById('btnValidatePlay')
 let btnValidateStop = document.getElementById('btnValidateStop')
 let random = ""
 let avatar = document.getElementById("randomName");
-let suspense = document.getElementById ('#suspense')
+let suspense = document.getElementById ('suspense')
+let winner = document.getElementById ('winner')
 
 btnValidatePlay.addEventListener("click", function () {
     if (names.length>1){
@@ -19,10 +20,14 @@ btnValidateStop.addEventListener("click", function () {
     avatar.removeAttribute("class", "shake");
     let random = ''
     random = names[Math.floor(Math.random() * names.length)];
-    console.log(random)
-    window.alert(`El ganador es ${random}.
-            May the odds be ever in your favour`)
+    console.log(random);
+        winner.innerHTML = `El ganador es ${random}.
+                May the odds be ever in your favour`
+                console.log (winner);
+                winner.style.display='flex'}
+                
 
-});
+
+);
 
 
