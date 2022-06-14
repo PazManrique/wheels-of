@@ -4,7 +4,7 @@
 }
 .Briefings{
     display: flex;
-    justify-content:flex-start; 
+    justify-content:center; 
 }
 body{
     background-color: aquamarine;
@@ -13,10 +13,12 @@ body{
     
     /* Slideshow container */
     .slideshow-container {
+      width: 15%;
+      height: 15%; 
       max-width: 1000px;
       position: relative;
       margin-left: 3%;
-      margin-top: 2%;
+      margin-top: 3%;
       
     }
     
