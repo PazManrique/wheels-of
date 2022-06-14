@@ -1,17 +1,59 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS only -->
+    <script src="https://kit.fontawesome.com/04c7e45abc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/style.scss">
+
 </head>
+
 <body>
-    
-<h1>Hello Parcel</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident distinctio commodi, tempora aut molestiae dolor assumenda amet. Libero sapiente magnam dolorem ullam dicta omnis minima earum rerum enim aspernatur?</p>
+    <section id="configuration" class="ms-5 me-5">
+        <div class="input-group mt-3">
+            <input type="text" class="rounded-5 form-control border border-primary" placeholder="Introducir nombre del juego...">
+            <button class="border-0 btn" type="button"><img src="assets/edit.png"></i></button>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" class="rounded-5 form-control border border-primary" id="name1" placeholder="Introducir nombre participante...">
+            <button class="border-0 btn btn-outline" id="btn-add" type="button"><img src="assets/plus.png"></button>
+        </div>
+
+        <h5 class="mt-5"id="result1">Lista de participantes:</h5>
+        <div class="input-group mt-3">
+            <input type="text" class="rounded-5 form-control border border-primary" placeholder="Nombre participante"
+                aria-label="Recipient's username with two button addons">
+            <button class="border-0 btn" type="button"><img src="assets/edit.png"></button>
+            <button class="border-0 btn" type="button"><img src="assets/trash.png"></button>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" class="rounded-5 form-control border border-primary" placeholder="Nombre participante"
+                aria-label="Recipient's username with two button addons">
+            <button class="border-0 btn" type="button"><img src="assets/edit.png"></button>
+            <button class="border-0 btn" type="button"><img src="assets/trash.png"></button>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" class="rounded-5 form-control border border-primary" placeholder="Nombre participante"
+                aria-label="Recipient's username with two button addons">
+            <button class="border-0 btn" type="button"><img src="assets/edit.png"></button>
+            <button class="border-0 btn" type="button"><img src="assets/trash.png"></button>
+        </div>
+        <!--<button class="border-0 mt-5 btn btn-outline-secondary" id="btn-add" type="button"><img src="assets/plus.png"></button>-->
+        
 
 
+    </section>
+    <script src="js/crud.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
