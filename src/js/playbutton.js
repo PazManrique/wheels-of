@@ -64,7 +64,7 @@ function deleteItem() {
 }
 
 renderItem();
-
+2
 
 
 
@@ -76,7 +76,8 @@ let btnValidatePlay = document.getElementById('btnValidatePlay')
 let btnValidateStop = document.getElementById('btnValidateStop')
 let random = ""
 let avatar = document.getElementById("randomName");
-let suspense = document.getElementById('#suspense')
+let suspense = document.getElementById('suspense')
+let winner = document.getElementById('winner')
 
 
 btnValidatePlay.addEventListener("click", function () {
@@ -93,8 +94,8 @@ btnValidateStop.addEventListener("click", function () {
   let random = ''
   random = names[Math.floor(Math.random() * names.length)];
   console.log(random)
-  window.alert(`El ganador es ${random}.
-            // May the odds be ever in your favour`)
+  winner.innerHTML = `${random.name}, has sido seleccionad@!
+  Que la suerte este siempre de tu lado.`
 
             
 

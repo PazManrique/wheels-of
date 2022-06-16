@@ -44,9 +44,11 @@
                 </ul>
             </div>
         </nav>
-
+        <h1 id="game-title">Nombre Juego:</h1>
         <section class="SuperGiaco">
             <img id="randomName" src="./assets/Avatar-Maker.png" alt="Super Giaco">
+            <div id="winner" class="alert alert-success" role="alert" style="display: flex;"></div>
+            
         </section>
 
         <div class="container">
@@ -55,7 +57,7 @@
         </div>
 
         <section id="configuration" class="ms-5 me-5">
-            <h1 id="game-title">Nombre Juego:</h1>
+          
             <form onsubmit="event.preventDefault()">
                 <div class="input-group mt-3">
                     <input type="text" class="rounded-5 form-control border border-primary" id="title"
