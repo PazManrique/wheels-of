@@ -1,15 +1,18 @@
-<html lang="en">
+<html>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="./sass/style.scss">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link el="stylesheet" href="./sass/Confetti.sass">
-<script src="./js/confetti.js" defer></script>
+<head>
+  <meta lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/style.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -28,18 +31,98 @@
 
       <button id="btnValidatePlay" class="play"> <i class="fa fa-play-circle" aria-hidden="true"> </i> </button>
 
+  <main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="#"><img src="assets/The-warriors-logo.webp" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#Briefings" ><img src="assets/Booklibro2 (2).png" alt="imagen de libro"> <span
+                class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sonido" ><img src="assets/Speakersonido2.png" alt="altavoz"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuration" ><img src="./assets/Servicesajustes2.png" alt="ruedas de configuracion"></a>
+          </li>
+         
+     
+          <li class="nav-item">
+            <a class="nav-link" href="#btnValidatePlay" ><img src="./assets/Playboton2.png" alt="Boton de play"></a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+
+    <br>
+    <section class="SuperGiaco">
+      <img id="randomName" src="./assets/Avatar-Maker.png" alt="Super Giaco">
+      <div id="winner" class="alert alert-success" role="alert">
+      </div>
+
+    </section>
+
+    <div class="container">
+
+      <button id="btnValidatePlay" class="play"> <i class="fa fa-play-circle" aria-hidden="true"> </i> </button>
+
       <button id="btnValidateStop" class="exit"> <i class="fa fa-pause-circle" aria-hidden="true"></i></button>
 
     </div>
 
     <br>
+    <section id="configuration" class="ms-5 me-5">
+        
+        <h1 id="game-title">Nombre Juego:</h1>
 
-    <section class="Briefings">
+        <form onsubmit="event.preventDefault()">
+            <div class="input-group mt-3">
+                <input type="text" class="rounded-5 form-control border border-primary" id="title"
+                    placeholder="Introducir nombre del juego...">
+                <button class="border-0 btn" id="btn-title" type="button"><img src="assets/edit.png"></i></button>
+            </div>
+
+<<<<<<< HEAD
+      <div class="BriefingsAvatar">
+
+        <img src="./assets/Avatar-Maker (briefings).png" class="img-fluid" alt="...">
+
+=======
+            <h5 class="mt-5" id="result1">Lista de participantes:</h5>
+            <!--<button class="btn" onclick="clearForm()">Limpiar Lista</button>-->
+            <div class="input-group mt-3 mb-5">
+                <input type="text" class="rounded-5 form-control border border-primary" id="name"
+                    placeholder="Introducir participante...">
+                <button class="border-0 btn btn-outline" id="btn-add" type="button" onclick="create()"><img
+                        src="assets/plus.png"></button>
+                <button class="border-0 btn" type="button" onclick="update()"><img src="assets/edit.png"></button>
+                <button class="border-0 btn" type="button" onclick="deleteItem()"><img src="assets/trash.png"></button>
+            </div>
+
+            <select class="form-select rounded-5 border border-primary overflow-auto"
+                aria-label="Default select example" id="panel" size="20" onclick="panelClick()"></select>
+
+        </form>
+    </section>
+
+    <section id="Briefings" class="Briefings">
 
       <div class="BriefingsAvatar">
 
         <img src="./assets/Avatar-Maker (briefings).png" class="img-fluid" alt="...">
 
+>>>>>>> develop
       </div>
 
       <div class="slideshow-container">
@@ -55,9 +138,13 @@
           <img src="./assets/slide2.png" class="img-fluid" alt="...">
 
         </div>
+<<<<<<< HEAD
 
         <div class="mySlides fade">
+=======
+>>>>>>> develop
 
+        <div class="mySlides fade">
 
           <img src="./assets/slide3.png" class="img-fluid" alt="...">
 
@@ -72,6 +159,7 @@
         <div class="mySlides fade">
 
           <img src="./assets/slide5.png" class="img-fluid" alt="...">
+<<<<<<< HEAD
 
           <br>
 
@@ -80,6 +168,21 @@
   <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
   <script src="./js/briefings.js"></script>
 
+=======
+          </div>
+
+          <br>
+</main>
+<!-- <script src="js/crud.js"></script> -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/briefings.js"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+>>>>>>> develop
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
@@ -87,8 +190,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script src="./js/playbutton.js"></script>
+<<<<<<< HEAD
   
+=======
+  <script src="https://kit.fontawesome.com/04c7e45abc.js" crossorigin="anonymous"></script>
+>>>>>>> develop
 
 </body>
+<!-- Footer -->
+<footer>
+
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="/"> The Git Warriors</a>
+  </div>
+
+
+</footer>
+<!-- Footer -->
+
 
 </html>
