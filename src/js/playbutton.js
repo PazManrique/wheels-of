@@ -96,13 +96,14 @@ btnValidateStop.addEventListener("click", function () {
   console.log(random)
   winner.innerHTML = `${random.name}, has sido seleccionad@!
   Que la suerte este siempre de tu lado.`
+  confetti.start()
+  setTimeout(function() { confetti.stop(); }, 2000);
 
             
 
 
 });
  
-
 
 
 
