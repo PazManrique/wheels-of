@@ -1,30 +1,148 @@
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./sass/style.scss">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   <!-- JavaScript Bundle with Popper -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+
     <main>
+
+
+   
+        
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" href="#"><img src="assets/The-warriors-logo.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Instrucciones"target="_blank"><img src="assets/Booklibro2 (2).png" alt=""> <span class="sr-only">(current)</span>
+               </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Sonido"target="_blank"><img src="assets/Speakersonido2.png" alt=""></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Ajustes"target="_blank"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/Servicesajustes2.png" alt="">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><img src="assets/Playboton2.png" alt=""></a>
+            </li>
+          </ul>        
+          
+        
+      </div>
+      </nav>
+
+<br>
+<section class="SuperGiaco">
     <img id="randomName" src="./assets/Avatar-Maker.png" alt="Super Giaco">
     <div id="winner" class="alert alert-success" role="alert">
       </div>
+
+</section>
    
       <div class="container">
+
         <button id="btnValidatePlay" class="play"> <i class="fa fa-play-circle" aria-hidden="true"> </i> </button>
+
         <button id="btnValidateStop" class="exit"> <i class="fa fa-pause-circle" aria-hidden="true"></i></button>
+
     </div>
+
+    <br>
+
+    <section class="Briefings">
+
+        <div class = "BriefingsAvatar">
+
+            <img src="./assets/Avatar-Maker (briefings).png" class="img-fluid" alt="...">
+
+        </div>
+
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+
+          <img src="./assets/slide1.png" class="img-fluid" alt="...">
+
+        </div>
+      
+        <div class="mySlides fade">
+
+          <img src="./assets/slide2.png" class="img-fluid" alt="...">
+
+        </div>
+      
+        <div class="mySlides fade">
+
+
+          <img src="./assets/slide3.png" class="img-fluid" alt="...">
+
+        </div>
+    
+        <div class="mySlides fade">
+
+            <img src="./assets/slide4.png" class="img-fluid" alt="...">
+
+          </div>
+    
+          <div class="mySlides fade">
+
+            <img src="./assets/slide5.png" class="img-fluid" alt="...">
+
+      <br>
+
 </main>
- 
+
+<script src="./js/briefings.js"></script>
+
+ <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="./js/playbutton.js"></script>
+
 </body>
+<!-- Footer -->
+<footer>
+  
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="/"> The Git Warriors</a>
+  </div>
+  
+ 
+</footer>
+<!-- Footer -->
+   
+ 
 </html>
+  
+  
+
+   
+
+
+
+

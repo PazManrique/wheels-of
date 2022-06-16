@@ -1,4 +1,12 @@
+#randomName{
+  width: 30%;
+  height: 30%; 
+}
+.SuperGiaco{
+  display: flex;
+  justify-content: center;
 
+}
   #randomName.shake{
     animation : shake .10s; 
     animation-iteration-count: infinite;
