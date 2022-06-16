@@ -22,7 +22,7 @@ btnValidateStop.addEventListener("click", function () {
     random = names[Math.floor(Math.random() * names.length)];
     console.log(random);
         winner.innerHTML = `El ganador es ${random}.
-                May the odds be ever in your favour`
+         - Que la suerte esté siempre de tu lado -`
                 console.log (winner);
                 winner.style.display='flex'}
                 
