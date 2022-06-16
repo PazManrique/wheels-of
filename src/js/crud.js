@@ -16,7 +16,11 @@ function clearTitle() {
 
 
 let element, i;
-let names = [];
+let names = [ { firstname: "Mauricio"  },
+{ firstname: "Jorge"  },
+{ firstname: "Andrés" },
+{ firstname: "Rafael" }];
+
 let panel = document.querySelector("#panel");
 
 function clearForm() {
@@ -27,33 +31,35 @@ function renderItem() {
   panel.textContent = "";
   names.forEach(x => {
     element = document.createElement("option");
-    element.innerText = `${x.name}`;
+    //element.innerText = `${x.name}`;
+    element.innerText = `${x.firstname}`;
     panel.append(element);
   });
 }
 
 function create() {
-  let competitor = document.querySelector("#name").value;
-  names = [...names, { name: competitor}];
+  let fn = document.querySelector("#name").value;
+  names = [...names, { firstname: fn}];
   clearForm();
+  console.log(names);
   renderItem();
 }
 
 function panelClick() {
   i = panel.selectedIndex;
-  document.querySelector("#name").value = names[i].name;
+  document.querySelector("#name").value = names[i].firstname;
   
 }
 
 function update() {
   names[i].name = document.querySelector("#name").value;
-  clearForm();
+ // clearForm();
   renderItem();
 }
 
 function deleteItem() {
   names.splice(i, 1);
-  clearForm();
+  //clearForm();
   renderItem();
 }
 
