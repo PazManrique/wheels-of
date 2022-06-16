@@ -59,6 +59,7 @@ function create() {
 function panelClick() {
   i = panel.selectedIndex;
   document.querySelector("#name").value = names[i].name;
+  
 }
 
 function update() {
