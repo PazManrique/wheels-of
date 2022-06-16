@@ -94,12 +94,13 @@ btnValidateStop.addEventListener("click", function () {
   random = names[Math.floor(Math.random() * names.length)];
   console.log(random)
   window.alert(`El ganador es ${random}.
-             May the odds be ever in your favour`)
+            // May the odds be ever in your favour`)
 
-
+            
 
 
 });
+ 
 
 
 
