@@ -94,10 +94,12 @@ btnValidateStop.addEventListener("click", function () {
   let random = ''
   random = names[Math.floor(Math.random() * names.length)];
   console.log(random)
-  winner.innerHTML = `${random.name}, has sido seleccionad@!
-  Que la suerte este siempre de tu lado.`
   confetti.start()
-  setTimeout(function() { confetti.stop(); }, 2000);
+ setTimeout(function() { confetti.stop(); }, 3000);
+ swal (`${random.name} has sido seleccionad@` , 'Que la suerte esté siempre de tu lado')
+
+//  winner.innerHTML= (`${random.name}, has sido seleccionad@!
+//   Que la suerte este siempre de tu lado.`)
 
             
 
