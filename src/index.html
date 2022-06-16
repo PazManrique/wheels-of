@@ -18,6 +18,7 @@
 
 <body>
     <main>
+     
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <a class="navbar-brand" href="#"><img src="assets/The-warriors-logo.webp" class="img-fluid" alt=""></a>
@@ -29,18 +30,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Instrucciones" target="_blank"><img src="assets/Booklibro2 (2).png"
+                        <a class="nav-link" href="#Briefings" ><img src="assets/Booklibro2 (2).png"
                                 alt=""> <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/Speakersonido2.png" alt=""></a>
+                    <li id="sound" class="nav-item">
+                        <a class="nav-link" href="#hungerGames"><img src="assets/Speakersonido2.png" alt=""></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/Servicesajustes2.png" alt=""></a>
+                        <a class="nav-link" href="#configuration"><img src="assets/Servicesajustes2.png" alt=""></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="assets/Playboton2.png"
+                        <a class="nav-link" href="#randomName" tabindex="-1" aria-disabled="true"><img src="assets/Playboton2.png"
                                 alt=""></a>
                     </li>
                 </ul>
@@ -80,7 +81,7 @@
             </form>
         </section>
 
-        <section class="Briefings">
+        <section id="Briefings" class="Briefings">
 
             <div class="BriefingsAvatar">
                 <img src="./assets/Avatar-Maker (briefings).png" class="img-fluid" alt="...">
@@ -108,9 +109,14 @@
                     <img src="./assets/slide5.png" class="img-fluid" alt="...">
                 </div>
             </div>
+           
     </main>
+    <audio id="hungerGames" controls autoplay loop>
+        <source src="./audio/Reaping Day HD.mp3" type="audio/mpeg" />
+    </audio>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/playbutton.js"></script>
+    <script src="./js/sound.js"></script>
     <!-- <script src="js/crud.js"></script>-->
     <script src="./js/briefings.js"></script>
     <!-- JavaScript Bundle with Popper -->
